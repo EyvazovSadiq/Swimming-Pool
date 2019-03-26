@@ -162,7 +162,7 @@
 
             <li>
                 <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
-                    <input type="text"  id="search_id" title="Ad , Soyad və ya Koda görə axtarış edə bilərsiz" placeholder="Axtar..." class="form-control">
+                    <input type="text"  id="search_id" title="Search by name, surname or code" placeholder="Search..." class="form-control">
                     <a><i class="fa fa-search"></i></a>
                 </form>
             </li>
@@ -186,31 +186,31 @@
         <ul class="nav" id="side-menu">
 
             <li style="padding: 70px 0 0;">
-                <a id="register_button_id" href="#" class="waves-effect menu_btn"><i class="fa  fa-user-plus fa-fw" aria-hidden="true" ></i>Qeydiyyat</a>
+                <a id="register_button_id" href="#" class="waves-effect menu_btn"><i class="fa  fa-user-plus fa-fw" aria-hidden="true" ></i>Registration</a>
             </li>
             <li>
-                <a id="payment_button_id" href="#" class="waves-effect menu_btn"><i class="fa  fa-dollar fa-fw" aria-hidden="true"></i>Ödəniş et</a>
+                <a id="payment_button_id" href="#" class="waves-effect menu_btn"><i class="fa  fa-dollar fa-fw" aria-hidden="true"></i>Pay</a>
             </li>
 
             <li>
-                <a id="swimmers_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Üzgüçülər</a>
+                <a id="swimmers_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Swimmers</a>
             </li>
             <li>
-                <a id="payments_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-bar-chart-o fa-fw " aria-hidden="true"></i>Ödənişlər</a>
+                <a id="payments_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-bar-chart-o fa-fw " aria-hidden="true"></i>Payments</a>
             </li>
             <li>
-                <a id="coming_button_id"  href="#" class="waves-effect menu_btn"><i class="fa  fa-clock-o fa-fw" aria-hidden="true"></i>Girişlər</a>
+                <a id="coming_button_id"  href="#" class="waves-effect menu_btn"><i class="fa  fa-clock-o fa-fw" aria-hidden="true"></i>Entries</a>
             </li>
 
             <c:if test="${login.role=='admin'}">
             <li>
-                <a id="workers_button_id" href="javascript:;" data-toggle="collapse" data-target="#demo" class="menu_btn"><i class="fa fa-group fa-fw"></i> İşçilər</a>
+                <a id="workers_button_id" href="javascript:;" data-toggle="collapse" data-target="#demo" class="menu_btn"><i class="fa fa-group fa-fw"></i> Workers</a>
                 <ul  class="collapse" style="list-style-type: none;">
                     <li>
-                        <a id="view_workers_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-hand-o-right fa-fw" aria-hidden="true"></i>Bax</a>
+                        <a id="view_workers_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-hand-o-right fa-fw" aria-hidden="true"></i>Show</a>
                     </li>
                     <li>
-                        <a id="add_worker_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-plus fa-fw " aria-hidden="true"></i>Əlavə et</a>
+                        <a id="add_worker_button_id" href="#" class="waves-effect menu_btn"><i class="fa fa-plus fa-fw " aria-hidden="true"></i>Add</a>
                     </li> <br>
                 </ul>
             </li>
@@ -233,12 +233,12 @@
 
         <div class="row bg-title">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <p  style="font-size: 22px; font-style: italic;"> <code>  Qeydiyyat </code></p>
+                <p  style="font-size: 22px; font-style: italic;"> <code>  Registration </code></p>
             </div>
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                 <ol class="breadcrumb">
                     <li><a href="#"> Swimming Pool </a></li>
-                    <li class="active"> Qeydiyyat </li>
+                    <li class="active"> Registration </li>
                 </ol>
             </div>
         </div>
@@ -249,11 +249,11 @@
                     <br>
                     <form class="form-horizontal form-material">
                         <div style="text-align: center">
-                            <h3 id="reg_warning_id" style="color: red; font-style: italic; text-align: center; display: none;">  * simvolu olan xanaları boş saxlamayın !</h3>
+                            <h3 id="reg_warning_id" style="color: red; font-style: italic; text-align: center; display: none;">  Please, fill the required fields!</h3>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-12" style="display: inline-block">Ad * </label>
+                            <label class="col-md-12" style="display: inline-block">Name * </label>
 
                             <div class="col-md-12">
                                 <input type="text" placeholder="Eli" class="form-control form-control-line" name="name" id="name_id">
@@ -261,14 +261,14 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-12">Soyad *</label>
+                            <label class="col-md-12">Surname *</label>
                             <div class="col-md-12">
                                 <input type="text" placeholder="Eliyev" class="form-control form-control-line" name="surname" id="surname_id">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-12">Mobil nömrə * </label>
+                            <label class="col-md-12">Phone number * </label>
                             <div class="col-md-12">
                                 <input type="tel" placeholder="055 7654321" class="form-control form-control-line" name="phone" id="phone_id">
                             </div>
@@ -282,25 +282,25 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="dob_id" class="col-md-12">Doğum tarixi * </label>
+                            <label for="dob_id" class="col-md-12">Date of Birth * </label>
                             <div class="col-md-12">
-                                <input type="text" placeholder="il-ay-gün"  class="form-control form-control-line"  name="dob" id="dob_id">
+                                <input type="text" placeholder="yyyy-mm-dd"  class="form-control form-control-line"  name="dob" id="dob_id">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-12">Cins * </label>
+                            <label class="col-sm-12">Gender * </label>
                             <div class="col-sm-12">
                                 <select id="gender_id" name="gender" class="form-control form-control-line">
-                                    <option value="0">Seçin :</option>
-                                    <option value="1">Kişi</option>
-                                    <option value="2">Qadın</option>
+                                    <option value="0">Choose :</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-12">Kateqoriya *</label>
+                            <label class="col-sm-12">Category *</label>
                             <div class="col-sm-12">
                                 <select id="category_id" name="category" class="form-control form-control-line">
                                 </select>
@@ -309,11 +309,11 @@
 
                         <div class="form-group">
                             <div class="col-sm-3" style="float: right;">
-                                <input type="button" class="btn btn-success" value="Saxla" style="float: right; width: 170px;"  id="register_id">
+                                <input type="button" class="btn btn-success" value="Save" style="float: right; width: 170px;"  id="register_id">
                             </div>
 
                             <div class="col-sm-3" style="float: right;">
-                                <input type="reset" class="btn btn-info" value="Təmizlə" style="float: right; width: 170px;">
+                                <input type="reset" class="btn btn-info" value="Clean" style="float: right; width: 170px;">
                             </div>
                         </div>
                     </form>

@@ -11,13 +11,13 @@
 <div class="container-fluid">
     <div class="row bg-title">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-            <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  Qeydiyyat </code></p>
+            <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  Registration </code></p>
         </div>
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
             <ol class="breadcrumb">
-                <li><a href="#">Əsas</a></li>
-                <li class="active">Qeydiyyat</li>
+                <li><a href="#">Main</a></li>
+                <li class="active">Registration</li>
             </ol>
         </div>
 

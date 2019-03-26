@@ -11,13 +11,13 @@
 <div class="container-fluid">
     <div class="row bg-title">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-            <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  Üzgüçülər </code></p>
+            <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  Swimmers </code></p>
         </div>
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
             <ol class="breadcrumb">
                 <li><a href="#">Swimming Pool</a></li>
-                <li class="active">Üzgüçülər</li>
+                <li class="active">Swimmers</li>
             </ol>
         </div>
 
@@ -33,17 +33,17 @@
                         <thead>
                         <tr>
                             <th>No</th>
-                            <th>Ad</th>
-                            <th>Soyad</th>
-                            <th>Telefon</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Phome</th>
                             <th>Email</th>
-                            <th>Doğum tarixi</th>
-                            <th>Cins</th>
-                            <th>Kateqoriya</th>
-                            <th>Kod</th>
+                            <th>Date of birth</th>
+                            <th>Gender</th>
+                            <th>Category</th>
+                            <th>Code</th>
                             <th>Limit</th>
-                            <th>Başlama</th>
-                            <th>Son</th>
+                            <th>Start</th>
+                            <th>End</th>
                             <th><i  class="fa fa fa-arrow-down" aria-hidden="true"></i></th>
                             <th><i  class="fa fa fa-trash" aria-hidden="true"></i></th>
                         </tr>
@@ -85,7 +85,7 @@
 
                 <c:if test="${empty swimmerList}">
                     <div class="alert alert-warning" style="text-align: center;">
-                        <strong> Məlumat tapılmadı .</strong>
+                        <strong> No results found!</strong>
                     </div>
                 </c:if>
             </div>

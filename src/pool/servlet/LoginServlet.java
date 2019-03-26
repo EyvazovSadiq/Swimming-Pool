@@ -25,8 +25,10 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         {
             String username  = request.getParameter("username");
             String password = request.getParameter("password");
+            System.out.println(username);
+            System.out.println(password);
             if (username.isEmpty() || password.isEmpty()) {
-                request.setAttribute("message","Login və parolu boş saxlamayın !");
+                request.setAttribute("message","Please, fill the required fields!");
             }  else
             {
                 try {
@@ -36,7 +38,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                           session.setAttribute("login",login);
                           address="index.jsp" ;
                       }  else {
-                          request.setAttribute("message","Login və ya parol səhvdir !");
+                          request.setAttribute("message","Username or password is wrong!");
                           address = "/login.jsp";
                       }
                     } catch (Exception e) {

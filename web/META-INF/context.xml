@@ -7,8 +7,10 @@
           maxWait="10000"
           name="jdbc/swimming_pool"
           username="SWIMMING_DB"
-          password="swim2017321"
+          password="swimming2019"
           type="javax.sql.DataSource"
           url="jdbc:oracle:thin:@localhost:1521:XE"
           />
 </Context >
+
+<!--swim2017321-->

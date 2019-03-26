@@ -11,13 +11,13 @@
 <div class="container-fluid">
     <div class="row bg-title">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-       <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  Ödənişlər </code></p>
+       <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  Payments </code></p>
         </div>
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
             <ol class="breadcrumb">
                 <li><a href="#">Swimming Pool</a></li>
-                <li class="active">Ödənişlər</li>
+                <li class="active">Payments</li>
             </ol>
         </div>
 
@@ -31,12 +31,12 @@
                         <thead>
                         <tr>
                             <th>No</th>
-                            <th>Ad</th>
-                            <th>Soyad</th>
-                            <th>Kod</th>
-                            <th>Kateqoriya</th>
-                            <th>Pul</th>
-                            <th>Ödəniş tarixi</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Code</th>
+                            <th>Category</th>
+                            <th>Payment</th>
+                            <th>Payment date</th>
                         </tr>
                         </thead>
 

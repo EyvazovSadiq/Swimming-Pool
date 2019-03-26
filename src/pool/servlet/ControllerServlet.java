@@ -51,7 +51,7 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet {
                   sw.setCategory_id(Integer.parseInt(request.getParameter("category")));
                   sw.setCode(String.valueOf(System.currentTimeMillis()).substring(8, 13));
                   serviceDao.register_swimmer(sw);
-                  request.setAttribute("message","Qeydiyyat uğurla başa çatdı !");
+                  request.setAttribute("message","Successfully registered!");
                   address =  "WEB-INF/parse_jsp/response.jsp";
 
             }  else if (action.equals(actions.PAY))
@@ -70,7 +70,7 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet {
                 if (p.getSwimmer_id()!=1)
                     dao.pay_to_swimmer(p);
 
-                String message = "Ödəniş uğurla başa çatdı !";
+                String message = "Payment is done successfully!";
                 request.setAttribute("message",message);
                 address =  "WEB-INF/parse_jsp/response.jsp";
 
@@ -159,7 +159,7 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet {
                  login.setRole("user");
 
                 serviceDao.register_worker(login);
-                request.setAttribute("message","Qeydiyyat uğurla başa çatdı !");
+                request.setAttribute("message","Successfully registered!");
                 address =  "WEB-INF/parse_jsp/response.jsp";
             }
         }  catch (Exception e) {

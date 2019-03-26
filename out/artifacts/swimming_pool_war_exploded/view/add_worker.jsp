@@ -19,12 +19,12 @@
 
  <div class="row bg-title">
      <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-         <p class="page-title" style="font-size: 22px; font-style: italic;"> <code> İşçilər </code></p>
+         <p class="page-title" style="font-size: 22px; font-style: italic;"> <code> Workers </code></p>
      </div>
      <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
          <ol class="breadcrumb">
              <li><a href="#"> Swimming Pool </a></li>
-             <li class="active"> İşçilər </li>
+             <li class="active"> Workers </li>
          </ol>
      </div>
  </div>
@@ -36,32 +36,32 @@
              <form class="form-horizontal form-material">
                <div style="text-align: center">
                   <h3 id="worker_reg_warning_id" style="color: red; font-style: italic; text-align: center; display: none;">
-                  <i class="fa fa-frown-o fa-fw" aria-hidden="true"></i> Uğursuz !  * simvolu olan xanaları boş saxlamayın !</h3>
+                  <i class="fa fa-frown-o fa-fw" aria-hidden="true"></i> Unsuccessful !  Please, fill the required fields!</h3>
                </div>
 
                <div class="form-group">
-                  <label class="col-md-12" style="display: inline-block">Ad * </label>
+                  <label class="col-md-12" style="display: inline-block">Name * </label>
                   <div class="col-md-12">
                     <input type="text" placeholder="Eli" class="form-control form-control-line" id="worker_name_id">
                   </div>
                </div>
 
                <div class="form-group">
-                  <label class="col-md-12">Soyad *</label>
+                  <label class="col-md-12">Surname *</label>
                   <div class="col-md-12">
                     <input type="text" placeholder="Eliyev" class="form-control form-control-line" id="worker_surname_id">
                   </div>
                </div>
 
                <div class="form-group">
-                  <label class="col-md-12">İstifadəçi adı *</label>
+                  <label class="col-md-12">Username *</label>
                   <div class="col-md-12">
                     <input type="text" placeholder="Eliyev" class="form-control form-control-line" id="worker_username_id">
                   </div>
                </div>
 
                <div class="form-group">
-                  <label class="col-md-12">Parol *</label>
+                  <label class="col-md-12">Password *</label>
                   <div class="col-md-12">
                     <input type="password" placeholder="********" class="form-control form-control-line" id="worker_password_id">
                   </div>
@@ -75,10 +75,10 @@
                </div>
 
                <div class="form-group">
-                  <label class="col-sm-12">Rol *</label>
+                  <label class="col-sm-12">Role *</label>
                   <div class="col-sm-12">
                     <select id="worker_role_id" name="worker_role" class="form-control form-control-line">
-                        <option value="0">Seçin :</option>
+                        <option value="0">Choose :</option>
                         <option value="1">Admin</option>
                         <option value="2">User</option>
                     </select>
@@ -87,10 +87,10 @@
 
                <div class="form-group">
                   <div class="col-sm-3" style="float: right;">
-                     <input type="button" class="btn btn-success" value="Saxla" style="float: right; width: 170px;" id="register_worker_id">
+                     <input type="button" class="btn btn-success" value="Save" style="float: right; width: 170px;" id="register_worker_id">
                   </div>
                   <div class="col-sm-3" style="float: right;">
-                     <input type="reset" class="btn btn-info" value="Təmizlə" style="float: right; width: 170px;">
+                     <input type="reset" class="btn btn-info" value="Clean" style="float: right; width: 170px;">
                   </div>
                </div>
              </form>

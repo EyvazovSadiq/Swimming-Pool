@@ -11,13 +11,13 @@
 <div class="container-fluid">
     <div class="row bg-title">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-            <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  İşçilər </code></p>
+            <p class="page-title" style="font-size: 22px; font-style: italic;"> <code>  Workers </code></p>
         </div>
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
             <ol class="breadcrumb">
                 <li><a href="#">Swimming Pool</a></li>
-                <li class="active">İşçilər</li>
+                <li class="active">Workers</li>
             </ol>
         </div>
 
@@ -33,11 +33,11 @@
                             <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Ad & Soyad</th>
-                                <th>Login</th>
-                                <th>Parol</th>
+                                <th>Name & Surname</th>
+                                <th>Username</th>
+                                <th>Password</th>
                                 <th>Email</th>
-                                <th>Rolu</th>
+                                <th>Role</th>
                                 <th><i  class="fa fa fa-trash" aria-hidden="true"></i></th>
                             </tr>
                             </thead>
@@ -61,7 +61,7 @@
 
                 <c:if test="${empty loginList}">
                     <div class="alert alert-warning" style="text-align: center;">
-                        <strong> Məlumat tapılmadı .</strong>
+                        <strong> No results found!</strong>
                     </div>
                 </c:if>
             </div>

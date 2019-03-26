@@ -106,9 +106,9 @@ public class pool_dao_impl  implements  pool_dao {
                 ps.setString(4,s.getEmail());
                 ps.setString(5,s.getDob());
                 if (s.getGender().equals("1"))
-                    ps.setString(6,"kishi");
+                    ps.setString(6,"male");
                  else
-                    ps.setString(6, "qadin");
+                    ps.setString(6, "female");
                 ps.setInt(7,s.getCategory_id());
                 ps.setString(8,s.getCode());
                 ps.execute();
